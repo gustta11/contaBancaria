@@ -13,7 +13,7 @@ public class Conta {
 	public Conta(int numeroConta, String nomeTitular, double saldo) {
 		this.numeroConta = numeroConta;
 		this.nomeTitular = nomeTitular;
-		this.saldo = saldo;
+		deposito(saldo);
 	}
 	
 	 public Conta(int numeroConta, String nomeTitular) {
@@ -32,14 +32,14 @@ public class Conta {
 
 	public double getSaldo() {
 		return saldo;
-	}
+	} 
 
-	public void setDeposito(double valorDeposito) {
-		this.saldo += valorDeposito;
+	public void deposito(double valorDeposito) {
+		saldo += valorDeposito;
 	}
 	
-	public void setSaque(double ValorSaque) {
-		this.saldo = this.saldo - (ValorSaque + 5);
+	public void saque(double ValorSaque) {
+		saldo = saldo - (ValorSaque + 5);
 	}
 	
 	

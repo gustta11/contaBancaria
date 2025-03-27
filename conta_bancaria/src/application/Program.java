@@ -39,13 +39,13 @@ public class Program {
 		
 		System.out.println("Deposite um valor:");
 		double valorDeposito = scan.nextDouble();
-		conta.setDeposito(valorDeposito);
+		conta.deposito(valorDeposito);
 		System.out.println("Atualização da conta:");
 		System.out.println("Conta " + conta.getNumeroConta() + ", Titular:" + conta.getTitular() + ", Saldo: $ " + conta.getSaldo());
 		
 		System.out.println("Saque um valor:");
 		double valorSaque = scan.nextDouble();
-		conta.setSaque(valorSaque);
+		conta.saque(valorSaque);
 		System.out.println("Atualização da conta:");
 		System.out.println("Conta:" + conta.getNumeroConta() + ", Titular:" + conta.getTitular() + ", Saldo: $ " + conta.getSaldo());
 		
